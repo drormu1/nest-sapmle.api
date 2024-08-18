@@ -1,0 +1,52 @@
+
+POST http://localhost:3000/users/signup
+Content-Type: application/json
+
+{
+   
+    "email": "drormu1@gmail.com",
+    "password": "123"
+}
+
+### Post Request
+
+POST  http://localhost:3000/users/login
+Content-Type: application/json
+
+{
+    "email": "drormu1@gmail.com",
+    "password": "123"
+}
+
+
+
+
+### Post Request with Bearer Token
+POST http://localhost:3000/users/profile
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImRyb3JtdTFAZ21haWwuY29tIiwic3ViIjoyLCJpYXQiOjE3MjM5NzEyNjQsImV4cCI6MTc1NTUyODg2NH0.8W-qd_JRwTPrNOqdMucdxUvcMaVspOmHZoStSe1uxok
+Content-Type: application/json
+
+{
+  
+}
+####################################################################
+### Post Meeting with Bearer Token
+POST http://localhost:3000/meetings
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImRyb3JtdTFAZ21haWwuY29tIiwic3ViIjoyLCJpYXQiOjE3MjM5NzEyNjQsImV4cCI6MTc1NTUyODg2NH0.8W-qd_JRwTPrNOqdMucdxUvcMaVspOmHZoStSe1uxok
+Content-Type: application/json
+
+{
+  
+  "title": "bawwewr",
+  "description": "dsdffdfdfds32423423423"
+}
+
+### Get all meetings
+GET http://localhost:3000/meetings
+
+### Get a specific meeting by ID
+GET http://localhost:3000/meetings/11
+
+### Get User Meetings
+GET http://localhost:3000/users/1/meetings
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImRyb3JtdTFAZ21haWwuY29tIiwic3ViIjoyLCJpYXQiOjE3MjM5NzEyNjQsImV4cCI6MTc1NTUyODg2NH0.8W-qd_JRwTPrNOqdMucdxUvcMaVspOmHZoStSe1uxok
